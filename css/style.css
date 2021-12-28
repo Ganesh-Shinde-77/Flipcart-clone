@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --main-bg-color:#2874f0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    overflow: hidden;
+}
+
+/* --------HEADER-------- */
+header{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    /* z-index: 1;
+    position: sticky; */
+}
+
+/* We made header flexible by giving height to ul of navbar rather than giving height directly to header (earlier ul had only some portion of height of header, now nav has height as per our need and header is flexible) */
+nav ul{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 31px;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: rgb(36, 185, 235);
+    border-radius: 10px;
+    /* font-weight: bold; */
+}
+
+.logo img{
+    width: 90px;
+    padding: 0 20px;
+}
+
+.search input{
+    width: 23vw;
+    height: 3.9vh;
+    border-style: none;
+    border-radius: 3px;
+    padding: 0 1rem;
+    margin: 0 1rem 0 9rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* --------MAIN-------- */
+main{
+    min-height: calc(100vh - 8vh - 10vh);
+}
+
+
+/* .slider img{
+    display: block;
+    
+} */
+
+.mycards{
+    margin: 72vh 0 0 0;
+}
+
+
+.slider{
+    height: 65vh;
+    width: 100vw;
+    overflow: hidden;
+    float: left;
+}
+
+figure div{
+    width: 25%;
+    float: left;
+}
+
+figure div img {
+    width: 100vw;
+    height: 65vh;
+    float: left;
+    padding: 0 3vw;
+    margin: 3vh 0 7vh 0;
+}
+
+figure{
+    position: relative;
+    width: 400%;
+    animation: slide 20s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+.cardimg img{
+    width: 18vw;
+    height: 47vh;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.cardimg{
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0 0.8rem;
+    /* overflow: hidden; */
+    /* min-width: none; */
+}
+
+/* .cards{
+    display: inline-block;
+} */
+
+.cardflexclass{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 17px 0px;
+}
+
+.cardlist{
+    display: flex;
+    justify-content: center;
+    width: 23vw;
+    flex-direction: column;
+}
+
+.cardlines{
+    text-align: center;
+}
+
+.allcards{
+    margin: 10vh 2vw;
+    font-size: 2rem;
+}
+
+.myclass-2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+}
+
+.myclass-1{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* --------FOOTER-------- */
+footer{
+    font-family: 'Nunito', sans-serif;
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+    
+    
+    
+/* 
+.slider_content li img{
+    display: block;
+} */
+
+/* .slider_content li{
+    list-style: none;
+} */
+    
+/* .img1{
+transform: translateX(-7vw);
+animation: slide1 2s ease-in 2s forwards;
+}
+
+.img1{
+    transform: translateX(-7vw);
+    animation: slide1 2s ease-in 2s forwards;
+}
+
+.img2{
+    transform: translateX(0vw);
+    animation: slide2 2s ease-in 2s forwards;
+}
+
+.img3{
+    transform: translateX(7vw);
+} */

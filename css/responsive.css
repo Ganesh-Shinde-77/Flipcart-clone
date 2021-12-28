@@ -1,0 +1,49 @@
+@media screen and (max-width: 900px) {
+    .logo{
+        display: block;
+        margin: 11px auto;
+    } 
+
+    nav ul{
+        padding: 0 13px;
+        margin: 0 auto;
+    }
+
+    .search{
+        margin: 12px -54px;
+    }
+
+    .btn{
+        margin: 0 0 0 59px;
+    }
+
+    .slider{
+        height: 35vh;
+    }
+
+    .slider img{
+        height: 27vh;
+    }
+
+    .slider_content{
+        height: 29vh;
+    }
+
+    .mycards{
+        margin: 34vh 0 0 0;
+    }
+
+    .cardlist{
+        width: auto;
+    }
+
+    .cardimg img{
+        height: 20vh;
+        width: 36vw;
+    }
+
+    .cardflexclass{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
