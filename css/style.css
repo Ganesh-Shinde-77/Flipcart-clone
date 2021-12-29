@@ -27,8 +27,11 @@ nav{
     flex-wrap: wrap;
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
-    /* z-index: 1;
-    position: sticky; */
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    background-color: var(--main-bg-color);
+    /* position: sticky; */
 }
 
 /* We made header flexible by giving height to ul of navbar rather than giving height directly to header (earlier ul had only some portion of height of header, now nav has height as per our need and header is flexible) */
@@ -84,7 +87,7 @@ main{
 } */
 
 .mycards{
-    margin: 72vh 0 0 0;
+    margin: 81vh 0 0 0;
 }
 
 
@@ -93,6 +96,7 @@ main{
     width: 100vw;
     overflow: hidden;
     float: left;
+    margin: 7vh 0 0 0;
 }
 
 figure div{
@@ -111,7 +115,7 @@ figure div img {
 figure{
     position: relative;
     width: 400%;
-    animation: slide 20s infinite;
+    animation: slide 15s infinite;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
